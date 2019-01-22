@@ -2,16 +2,16 @@ import React from 'react';
 
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import Link from './link'
+import Link from './link';
 
 const List = styled.ul`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
-	height: 49px;
+	height: 50px;
 `
 
 class Header extends React.Component {
