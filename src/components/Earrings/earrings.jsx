@@ -10,9 +10,12 @@ export default [
     },
     {
         "id": "56c782f17b4e0ba78c7ad717",
-        "date": "2016-04-09T18:03:23.000Z",
-        "title": "Quis occaecat",
-        "text": "Quis occaecat duis aliqua reprehenderit excepteur nisi deserunt excepteur elit magna. Magna cillum anim veniam deserunt voluptate occaecat irure fugiat laboris proident. Tempor do magna deserunt cillum laborum cillum ut.\n\nEst sunt cupidatat in deserunt sit aliqua duis. Mollit consequat duis aliquip occaecat pariatur non do eiusmod dolore amet deserunt ullamco. Ea minim tempor exercitation do tempor nostrud dolor minim veniam laboris commodo ex duis. Do nostrud voluptate ullamco consequat anim tempor voluptate incididunt aliqua tempor.\n\nIn irure quis nostrud do. Labore laboris irure culpa reprehenderit pariatur laboris in commodo culpa enim cillum magna. Magna ipsum pariatur sunt in reprehenderit ipsum duis officia voluptate adipisicing ad officia. Duis est sint mollit amet laborum magna non quis nulla ipsum in veniam sit. Amet velit consequat esse esse ea. Ipsum non do ut cillum in adipisicing labore non commodo do laborum sunt."
+        "sex": "womens",
+        "name": "Ring 2",
+        "descr": 'It is the best our ring!',
+        "img":  require('./img/img2.JPG'),
+        "link": 'index.html',
+        "toCart": 'cart.html',
     },
     {
         "id": "56c782f1978fdf9a0100df52",

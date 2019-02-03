@@ -47,11 +47,12 @@ const Cards = styled.div`
 				padding:0;
 				margin:0;
 				margin-bottom:10px;
+				text-decoration:none;
 			}
 			.descr{
 				color:#fff;
 				font-size:20px;
-				font-weight:500;
+				font-weight:400;
 				padding:0;
 				margin:0;
 				margin-bottom:20px;
@@ -82,11 +83,23 @@ const Cards = styled.div`
 				text-decoration:none;
 				transition: 0.2s ease-in-out;
 				border:2px solid transparent;
+				margin-bottom:20px;
 			}
-				.cart-link:hover{
-					transition: 0.2s ease-in-out;
+			.cart-link:hover{
+				transition: 0.2s ease-in-out;
 				background-color:rgba(255, 28, 71, 0.5);
 				border:2px solid #ff1c47;
+				}
+			.info-link{
+				color:#fff;
+				font-size:16px;
+				text-decoration:none;
+				transition: 0.2s ease-in-out;
+				border-bottom:1px solid transparent;
+			}
+			.info-link:hover{
+				transition: 0.2s ease-in-out;
+				border-bottom:1px solid #ff1c47;
 				}
 		}
 	}
@@ -116,7 +129,7 @@ class Card extends React.Component{
 						<img src={towards.img} alt={towards.name}></img>
 					</div>
 					<div className="info">
-						<p className="name">{towards.name}</p>
+						<a href={towards.link} className="name">{towards.name}</a>
 						<p className="descr">{towards.descr}</p>
 						<div className="sex">{towards.sex}</div>
 						<a href={towards.toCart} className="cart-link">add to cart</a>
