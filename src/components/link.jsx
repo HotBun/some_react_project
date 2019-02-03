@@ -24,6 +24,7 @@ const StyledLink = styled.a`
     transition: 0.5s ease-in-out;
 	}
 
+
 `
 class Link extends React.Component {
 	render() {

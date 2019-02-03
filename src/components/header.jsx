@@ -12,6 +12,7 @@ const List = styled.ul`
 	align-items: center;
 	padding: 0;
 	height: 50px;
+	margin: 0;
 `
 
 class Header extends React.Component {
@@ -21,9 +22,9 @@ class Header extends React.Component {
 					<Col lg={12} md={12} sm={12} xs={12}>
 							<nav>
 							<List>
-									<Link link="#" text="Ссылка 1"/>
-									<Link link="#" text="Ссылка 2"/>
-									<Link link="#" text="Ссылка 3"/>
+									<Link link="#" text="Кольца"/>
+									<Link link="#" text="Серьги"/>
+									<Link link="#" text="Подвески"/>
 									<Link link="#" text="О нас"/>
 									<Link link="#" text="Контакты"/>
 								</List>

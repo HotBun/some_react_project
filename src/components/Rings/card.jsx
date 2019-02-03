@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import towards from './earrings'
+import towards from './rings'
 
+const Cards = styled.div`
+margin: 5px;
+  background-color: #fff;
+  height: 400px;
+  width: 30%;
+  border:1px solid #f4f4f4;
+`
 
 
 class Card extends React.Component{
