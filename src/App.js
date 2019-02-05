@@ -21,7 +21,7 @@ const WorkArea = styled.div`
 `
 const HeaderWrapper = styled.header`
     width: auto;
-    height: 50px;
+    height: 70px;
     background-color: #f1f4f6;
     opacity: 0.8;
     padding: 0px 50px 0px 50px;

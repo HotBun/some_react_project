@@ -22,22 +22,16 @@ const Cards = styled.div`
     display: none;
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 0;
-    width: 140%;
-    height: 270px;
-    padding: 10px;
+    top: 4%;
+    left: 2%;
+    width: 96%;
+    height: 91%;
     background: rgba(16,16,16,0.9);
-    border-radius:5px;
-		.image{
-			height:100%;
-			width:50%;
-			img{
-				width:100%;
-			}
-		}
+    border-radius: 5px;
+    padding:30px 20px 30px 20px;
+    box-sizing:border-box;
 		.info{
-			width:50%;
+			width:100%;
 			padding-left:20px;
 			box-sizing:border-box;
 			.name{
@@ -125,9 +119,6 @@ class Card extends React.Component{
 			<Cards key = {towards.id} towards = {towards} defaultOpen = {index === 0}>
 				<img src={towards.img} alt={towards.name}></img>
 				<div className="show-info">
-					<div className="image">
-						<img src={towards.img} alt={towards.name}></img>
-					</div>
 					<div className="info">
 						<a href={towards.link} className="name">{towards.name}</a>
 						<p className="descr">{towards.descr}</p>

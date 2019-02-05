@@ -4,14 +4,16 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components';
 
-import Link from './link';
+import Links from './link';
+import logo from '../img/logo.png';
 
 const List = styled.ul`
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-around;
 	padding: 0;
-	height: 50px;
+	height: 70px;
 	margin: 0;
 `
 
@@ -22,11 +24,8 @@ class Header extends React.Component {
 					<Col lg={12} md={12} sm={12} xs={12}>
 							<nav>
 							<List>
-									<Link link="#" text="Кольца"/>
-									<Link link="#" text="Серьги"/>
-									<Link link="#" text="Подвески"/>
-									<Link link="#" text="О нас"/>
-									<Link link="#" text="Контакты"/>
+									<img src={logo} alt="logo" className="logo"/>
+									<Links/>
 								</List>
 							</nav>
 					</Col>
