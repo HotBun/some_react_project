@@ -23,11 +23,9 @@ position:relative;
    left: 7px;
     box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.2);
 
-   //display:none;
+   display:none;
   }
-  & input:focus .search-result{
-  display:block;
-  }
+
   &:hover .search-result{
   display:block;
   }
@@ -65,6 +63,7 @@ class Search extends Component {
  
   render () {
     const filteredTowars = towards.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
+    const filteredTowars_sss = towards_sss.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
     return (
       <SearchCont>
        <SearchInput className="search-input" onChange={this.searchUpdated}/>
@@ -72,16 +71,16 @@ class Search extends Component {
         {filteredTowars.map(towards => {
           return (
             <a href={towards.link} className="towards-link" key={towards.id}>
-              <img src={towards.img} className="towards-img"/>
+              <img src={towards.img} className="towards-img" alt={towards.name}/>
               <span className="towards-name">{towards.name}</span>
               <span className="towards-sex">{towards.sex}</span>
             </a>
           )
         })}
-         {filteredTowars.map(towards_sss => {
+         {filteredTowars_sss.map(towards_sss => {
           return (
             <a href={towards_sss.link} className="towards-link" key={towards_sss.id}>
-              <img src={towards_sss.img} className="towards-img"/>
+              <img src={towards_sss.img} className="towards-img"  alt={towards_sss.name}/>
               <span className="towards-name">{towards_sss.name}</span>
               <span className="towards-sex">{towards_sss.sex}</span>
             </a>

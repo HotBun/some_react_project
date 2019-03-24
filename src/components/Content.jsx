@@ -14,6 +14,8 @@ import Earings from "./Earings";
 import Rings from "./Rings";
 
 
+import DetailCard from "./DetailCard";
+
 
 const HeaderWrapper = styled.header`
   width: auto;
@@ -82,6 +84,7 @@ const Content = () => (
                 <ListLi><Link to="/Earings">Earings</Link></ListLi>
                 <ListLi><Link to="/Pendants">Pendants</Link></ListLi>
                 <ListLi><Link to="/Contacts">Contacts</Link></ListLi>
+                <ListLi><Link to="/DetailCard">Detail Card</Link></ListLi>
                 <ListLi><Link to="/Cart">Cart</Link></ListLi>
               </List>
             </nav>
@@ -93,6 +96,7 @@ const Content = () => (
         <Grid>
           <Route exact path="/Rings" component={Rings} />
           <Route path="/Earings" component={Earings} />
+          <Route path="/DetailCard" component={DetailCard} />
        </Grid>
       </MainWrapper>
     </div>
